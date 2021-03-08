@@ -1,0 +1,213 @@
+@media screen and (max-width: 1200px) {
+    .hero-section::after {
+        display: none;
+    }
+    .hero .hero-content-text h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 911px) {
+    .hero .hero-content-text h1 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project-box {
+        width: calc(50% - 20px);
+    }
+
+    .portfolio-item .item {
+        width: calc(50% - 20px);
+    }
+    .portfolio-menu ul li {
+        padding: 3px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar .desktop {
+        position: absolute;
+        left: -1000px;
+        top: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100vh - 80px);
+        z-index: 999;
+        background-color: #21272f;
+        transition: all 0.5s ease-in-out;
+    }
+    .navbar .desktop li {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .navbar .desktop li a {
+        color: #fff;
+    }
+    .buttons-mobile {
+        display: block;
+    }
+
+    .btn-menu-open,
+    .btn-menu-close {
+        font-size: 25px;
+        color: #00b862;
+        cursor: pointer;
+    }
+
+    .btn-menu-close {
+        display: none;
+    }
+
+    .shape01 {
+        display: none;
+    }
+
+    .shape02 {
+        display: none;
+    }
+
+    .hero-content-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Hero-content-text */
+    .hero .hero-content-text h1 {
+        font-size: 28px;
+        margin-bottom: 22px;
+        line-height: 34px;
+    }
+    .hero-content-text p {
+        font-size: 16px;
+    }
+    .hero-content-text button {
+        padding: 8px 34px;
+    }
+    .hero-content-text h1::before {
+        font-size: 32px;
+    }
+
+    /* form-contact */
+    .form-contact {
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 659px) {
+    .portfolio-item .item {
+        width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        height: calc(100vh - 80px);
+        justify-content: center;
+    }
+
+    .hero-box-img img {
+        max-width: 280px;
+    }
+
+    .hero-box-img {
+        display: flex;
+        height: 50%;
+    }
+
+    .hero-section .hero .hero-box-img {
+        margin-top: 20px;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .hero-content-text {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .hero-content-text p {
+        font-size: 15px;
+        padding: 0 24px;
+        text-align: left;
+    }
+
+    .hero-content-text h1::before {
+        display: none;
+    }
+
+    .hero-section::before {
+        top: -80px;
+        left: 0;
+        width: 100%;
+        height: 45%;
+        border-radius: 100% 0% 100% 0% / 0% 0% 100% 0%;
+    }
+
+    .logo span {
+        color: #00b862;
+    }
+
+    .project-box {
+        width: 100%;
+        margin: 15px 0px;
+    }
+    
+    .title-heading h2 {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+    }
+
+    /* Box form */
+    .box-form,
+    .form-ilustration {
+        width: 100%;
+    }
+
+    .form-ilustration {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 418px) {
+    .hero-content-text h1 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .hero-content-text button {
+        padding: 8px 28px;
+        margin-bottom: 10px;
+    }
+
+    .hero-box-img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .hero .hero-content-text h1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .hero .hero-content-text h1 {
+        font-size: 24px;
+    }
+
+    .title-heading h2 {
+        font-size: 18px;
+    }
+}

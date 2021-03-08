@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+    ================================================= RESET =================================================
+    ================================================= RESET =================================================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+::before, ::after, * {
+    box-sizing: border-box;
+}
+
+.slider-habilities {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #eee;
+}
+
+.slider-area .slider-item {
+    margin: 10px 0px 30px 0px;
+    padding: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    color: #00b862;
+    padding: 6px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #00b862;
+}
+
+.navbar .desktop li a.btn {
+    color: #00b862;
+}
+
+/*
+    ================================================= PADRÕES =================================================
+    ================================================= PADRÕES =================================================
+*/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+/*
+    ================================================= HEADER =================================================
+    ================================================= HEADER =================================================
+*/
+
+header {
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.04);
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.logo {
+    color: #21272f;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #00b862;
+}
+
+.desktop {
+    display: flex;
+}
+
+.desktop li {
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.desktop li:last-child {
+    margin-right: 0px;
+}
+
+.desktop li a {
+    color: #333;
+}
+
+.buttons-mobile {
+    display: none;
+}
+
+/*
+    ================================================= HERO =================================================
+    ================================================= HERO =================================================
+*/
+
+.hero-section {
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shapes {
+    width: 100%;
+    position: relative;
+    height: inherit;
+}
+
+.shape01 {
+    position: absolute;
+    left: calc(100% - 150px);
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    content: "";
+    border: 2px solid #00b862;
+    animation: myanimation01 8s linear infinite;
+}
+
+.shape02 {
+    position: absolute;
+    left: -100px;
+    top: 400px;
+    width: 150px;
+    height: 150px;
+    content: "";
+    border: 2px solid #00b862;
+    animation: rotatesquare 8s linear infinite;
+}
+
+@keyframes myanimation01 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-content-text {
+    flex: 1;
+}
+
+.hero-content-text span {
+    font-weight: 600;
+    color: #21272f;
+    margin-bottom: 0px;
+}
+
+.hero .hero-content-text h1 {
+    color: #00b862;
+    font-size: 46px;
+    font-weight: 600;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    line-height: 54px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.11);
+}
+
+.hero-content-text p {
+    color: #21272f;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-content-text a {
+    outline: none;
+    padding: 8px 48px;
+    border-radius: 3px;
+    background-color: #00b862;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-content-text a:hover {
+    background-color: #21272f;
+}
+
+.hero-box-img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.hero-box-img img {
+    max-width: 500px;
+    animation: imageanimation 5s linear infinite;
+}
+
+@keyframes imageanimation {
+    0%, 100% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes rotatesquare {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+    ================================================= TITLE =================================================
+    ================================================= TITLE =================================================
+*/
+
+.title-heading {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title-heading h2 {
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    color: #21272f;
+    font-size: 34px;
+}
+
+/*
+    ================================================= SLIDER HABILITIES =================================================
+    ================================================= SLIDER HABILITIES =================================================
+*/
+
+.box-icon i {
+    font-size: 38px;
+}
+
+.html-color {
+    color: #f76415;
+}
+
+.react-color {
+    color: #5ed3f3;
+}
+
+.css-color {
+    color: #2862e9;
+}
+
+.js-color {
+    color: #cfb430;
+}
+
+.php-color {
+    color: #7377ad;
+}
+
+.laravel-color {
+    color: #f72c1f;
+}
+
+.bootstrap-color {
+    color: #8210f5;
+}
+
+.wordpress-color {
+    color: #006f95;
+}
+
+.mysql-color {
+    color: #ea8c10;
+}
+
+.title h2 {
+    color: #21272f;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    line-height: 28px;
+    font-size: 26px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.paragraph-student p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #111;
+    margin: 0;
+    transition: all 0.5s ease;
+    font-weight: 400;
+}
+
+/*
+================================================= Portfolio =================================================
+================================================= Portfolio =================================================
+*/
+
+/* portfolio */
+
+.portfolio-menu {
+    text-align: center;
+    margin-top: 50px;
+}
+.portfolio-menu ul li {
+    display: inline-block;
+    padding: 3px 26px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    color: #272727;
+    border-radius: 5px;
+}
+.portfolio-menu ul li:hover {
+    background-color: #e84828;
+    color: #fff;
+}
+.portfolio-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.portfolio-item .item {
+    width: calc(33.3% - 20px);
+    margin: 10px;
+    margin-bottom: 10px;
+}
+.portfolio-menu ul li.active {
+    background-color: #e84828;
+    color: #fff;
+}
+
+/*
+================================================= BOX-CONTACT =================================================
+================================================= BOX-CONTACT =================================================
+*/
+
+.contact {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.box-contact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.box-form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.form-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contact label {
+    margin: 10px 0px;
+}
+
+.form-contact label input,
+.form-contact label textarea,
+.form-contact input[type=submit] {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 16px;
+    font-weight: 400;
+    color: #21272f;
+}
+
+.form-contact label textarea {
+    resize: vertical;
+    min-height: 200px;
+}
+
+.form-contact input[type=submit] {
+    border: none;
+    font-weight: 500;
+    background-color: #00b862;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-ilustration {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.form-ilustration img {
+    max-width: 500px;
+}
+
+/* Footer */
+
+footer {
+    padding: 30px 0px;
+    background-color: #00b862;
+}
+
+.box-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.copytext-footer {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .box-footer .dark-text {
+    color: #21272f;
+}
+
+footer .box-footer .logo {
+    color: #fff;
+}

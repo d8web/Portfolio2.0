@@ -1,298 +1,570 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Portfólio Daniel Ferreira"/>
-    <meta name="keywords" content="portfólio, desenvolvedor, front-end, back-end"/>
-    <link rel="stylesheet" href="assets/css/app.css"/>
-    <link rel="stylesheet" href="assets/css/responsive.css"/>
-    <link rel="stylesheet" href="assets/css/slick.css"/>
-    <link rel="stylesheet" href="assets/css/slick-theme.css"/>
-    <script src="https://kit.fontawesome.com/0b4368c6df.js"></script>
-    <link rel="shortcut icon" href="./icon.ico"/>
-    <title>DFDeveloper</title>
+	<title>DF - DEV</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile -->	
+    <meta name="description" content="Desenvolvedor web"> <!-- Descrição do site -->
+    <meta name="keywords" content="desenvolvimento, php, laravel, developer, web, front-end, back-end"> <!-- Palavras chave do site -->
+    <link rel="icon" href="icone.ico" type="image/x-icon"> <!-- Icone do site -->
+    <!-- Font awesome  -->
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<!-- Owl carrousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Default skin -->
+	<link rel="stylesheet" href="css/skins/black.css">
+	
+	<!-- Live style demo only -->
+	<link rel="stylesheet" title="crimson" class="alternate-style" href="css/skins/crimson.css" disabled>
+	<link rel="stylesheet" href="css/styleSwitcher.css">
+
 </head>
 <body>
-    
-    <header>
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <div><span>DF</span>Developer</div>
-                </div>
-                <ul class="desktop">
-                    <li>
-                        <a href="./">Home</a>
+
+	<!-- Preloader start -->
+	<div class="preloader">
+		<div class="loader">
+			
+		</div>
+	</div>
+	<!-- Preloader end -->
+
+   <!-- Header section start -->
+   <header class="header fixed-top">
+       <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Brand -->
+                <a class="navbar-brand" href="./">DF DEV</a>
+            
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
-                    <li>
-                        <a href="#about">Habilidades</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Conhecimentos</a>
                     </li>
-                    <li>
-                        <a href="#services">Projetos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
                     </li>
-                    <li>
-                        <a class="btn" href="#contact">Contato</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#others">Outros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
                     </li>
                 </ul>
-                <div class="buttons-mobile">
-                    <div class="btn-menu-open" onclick="handleMenuOpen(this)">
-                        <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+       </div>
+   </header>
+   <!-- Header section end -->
+
+   <!-- Home section start -->
+   <section class="home-section" id="home">
+       <div class="bg-shapes">
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+       </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="home-content">
+                        <h1>Olá, meu nome é Daniel, seja bem vindo ao meu portfólio!</h1>
+                        <p>Eu já criei desde páginas web, serviços de api com consulta e manipulação do banco de dados, e até aplicativos ;).</p>
+                        <a href="https://github.com/d8web" target="_blank" class="btn mybtn1">GITHUB</a>
                     </div>
-                    <div class="btn-menu-close" onclick="handleCloseMenu(this)">
-                        <i class="fa fa-times"></i>
+                </div>
+                <div class="col-lg-6 order-first order-lg-last">
+                    <div class="home-img">
+                        <img src="img/dev.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+   </section>
+   <!-- Home section end -->
 
-    <section class="hero-section">
-        <div class="shapes">
-            <div class="shape01"></div>
-            <div class="shape02"></div>
-        </div>
-        <div class="container">
-            <div class="hero">
-                <div class="hero-content-text">
-                    <span>OLÁ, EU SOU</span>
-                    <h1>Desenvolvedor Web</h1>
-                    <p>Meu nome é Daniel Ferreira, sou apaixonado por tecnologia, Bem-vindo ao meu portfólio.</p>
-                    <a href="https://github.com/d8web" target="_blank">Github</a>
+   
+
+   <!-- Features section start -->
+   <section class="features-section" id="features">
+       <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <!-- Section title start -->
+                    <div class="section-title">
+                        <h1 class="title">Conhecimentos</h1>
+                        <h2 class="subtitle">Tecnologias e Ferramentas que tenho conhecimento.</h2>
+                    </div>
+                    <!-- Section title end -->
                 </div>
-                <div class="hero-box-img">
-                    <img src="assets/images/dev.png" alt="Figura tecnologia" />
+            </div>
+            <div class="row">
+                <div class="owl-carousel" id="owl-carousel">
+                <!-- Features Item start -->
+                <div class="col-lg-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/html5-e-css3.jpg" class="img-small"/>
+                        <h3>Html5 e Css3</h3>
+                        <p>É uma linguagem de marcação para a World Wide Web, utilizada para a construção de páginas, para estilizar uma página usamos o Css3.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-lg-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/javascript.jpg" class="img-small"/>
+                        <h3>JavaScript</h3>
+                        <p>É atualmente a principal linguagem para programação client-side, e também é bastante utilizada do lado do servidor com o node.js.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/bootstrap.jpg" class="img-small"/>
+                        <h3>Bootstrap</h3>
+                        <p>O framework front-end e de código-aberto, criado para o desenvolvimento web mais rápido e prático.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/php.jpg" class="img-small"/>
+                        <h3>PHP</h3>
+                        <p>É uma linguagem interpretada livre, usada para o desenvolvimento de aplicações no lado do servidor, capazes de gerar conteúdo dinâmico na Web.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/laravel.jpg" class="img-small"/>
+                        <h3>Laravel</h3>
+                        <p>Laravel é um framework de aplicação web com sintaxe expressiva e elegante.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/database.png" class="img-small"/>
+                        <h3>MySql</h3>
+                        <p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/reactjs.jpg" class="img-small"/>
+                        <h3>React</h3>
+                        <p>React é uma ferramenta criada pelo facebook, aprendi seus conceitos básicos como usar os states e alguns hooks.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/nodejs.jpg" class="img-small"/>
+                        <h3>Node</h3>
+                        <p>Quando começei foi um pouco complexo, mas o node me ajudou a entender melhor como funciona um servidor, além de me ajudar na lógica.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/expo.png" class="img-small"/>
+                        <h3>Expo</h3>
+                        <p>Quando começei foi um pouco complexo, mas o node me ajudou a entender melhor como funciona um servidor, além de me ajudar na lógica.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/typescript.jpg" class="img-small"/>
+                        <h3>Typescript</h3>
+                        <p>Quando começei foi um pouco complexo, mas o node me ajudou a entender melhor como funciona um servidor, além de me ajudar na lógica.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <div class="icon">
+                            <img src="./img/mongo.png" class="img-small"/>
+                        </div>
+                        <h3>MongoDB</h3>
+                        <p>Quando começei foi um pouco complexo, mas o node me ajudou a entender melhor como funciona um servidor, além de me ajudar na lógica.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <div class="icon">
+                            <img src="./img/git.jpg" class="img-small"/>
+                        </div>
+                        <h3>Git</h3>
+                        <p>Quando começei foi um pouco complexo, mas o node me ajudou a entender melhor como funciona um servidor, além de me ajudar na lógica.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/wordpress.png" class="img-small"/>
+                        <h3>WordPress</h3>
+                        <p>É um sistema livre e aberto de gestão de conteúdo para internet, voltado principalmente para a criação de (sites) e blogs.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/elementor.png" class="img-small"/>
+                        <h3>Elementor</h3>
+                        <p>É um sistema livre e aberto de gestão de conteúdo para internet, voltado principalmente para a criação de (sites) e blogs.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+                <!-- Features Item start -->
+                <div class="col-md-12 d-flex">
+                    <div class="col-lg-12 features-item">
+                        <img src="./img/photoshop.png" class="img-small"/>
+                        <h3>Photoshop</h3>
+                        <p>É um sistema livre e aberto de gestão de conteúdo para internet, voltado principalmente para a criação de (sites) e blogs.</p>
+                    </div>
+                </div>
+                <!-- Features Item end -->
+            </div>
+            </div>
+       </div>
+   </section>
+   <!-- Features section end -->
+
+   <!-- Projetos section start -->
+   <section class="projects-section" id="projects">
+	   <div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7">
+					<!-- Section title start -->
+					<div class="section-title">
+						<h1 class="title">Projetos</h1>
+						<h2 class="subtitle">Alguns dos Meus Projetos</h2>
+					</div>
+					<!-- Section title end -->
+				</div>
+			</div>
+
+			<div class="row align-items-center">
+                <!-- Features Item start -->
+				<div class="col-lg-7">
+					<img src="./img/netflix.png" class="img-fluid img-res" />
+				</div>
+				<!-- Features Item end -->
+                <!-- Features Item start -->
+				<div class="col-lg-5">
+					<h2>Netflix clone React</h2>
+                    <p class="fs-my">Aqui aprendi a me comunicar com a api do TMDB (The Movie Database), e pegar a lista de filmes que a api retorna, nesse caso, uma função foi criada e retornamos um array com vários objetos, cada objeto é um item da categoria, possui um slug, um título e a lista de filmes. Por último aprendi a renderizar essa lista com jsx.</p>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                        <li>
+                            <a href="https://github.com/d8web/netflix-clone" target="_blank">Ver código</a>
+                        </li>
+                    </ul>
+				</div>
+				<!-- Features Item end -->
+                <!-- Features Item start -->
+				<div class="col-lg-7">
+					<img src="./img/loja.png" class="img-fluid img-res" />
+				</div>
+				<!-- Features Item end -->
+                <!-- Features Item start -->
+				<div class="col-lg-5">
+					<h2>Loja PHP</h2>
+                    <p class="fs-my">Neste projeto aprendi os conceitos básicos de um e-commmerce, listagem de produtos com paginação de resultados, sistema de busca integrado com filtros pela query string, tradução de palavras na estrutura mvc, página do produto dinâmica, envio de emails e montagem do carrinho com sessões.</p>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                        <li>
+                            <a href="https://github.com/d8web/projetoLoja" target="_blank">Ver código</a>
+                        </li>
+                    </ul>
+				</div>
+				<!-- Features Item end -->
+                <!-- Features Item start -->
+				<div class="col-lg-7">
+					<img src="./img/contaazul.png" class="img-fluid img-res" />
+				</div>
+				<!-- Features Item end -->
+                <!-- Features Item start -->
+				<div class="col-lg-5">
+					<h2>Stayblue Landing Page</h2>
+                    <p class="fs-my">Criei essa página com Bootstrap 5 para testar a nova versão da ferramenta, foi bem simples e não tive grandes dificuldades.</p>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                        <li>
+                            <a href="https://github.com/d8web/Stayblue" target="_blank">Ver código</a>
+                        </li>
+                        <li>
+                            <a href="https://d8web.github.io/Stayblue/" target="_blank">Ver Projeto</a>
+                        </li>
+                    </ul>
+				</div>
+				<!-- Features Item end -->
+			</div>
+
+	   </div>
+   </section>
+   <!-- Projetos section end -->
+
+   <section id="others">
+       <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <!-- Section title start -->
+                    <div class="section-title">
+                        <h1 class="title">Outros</h1>
+                        <h2 class="subtitle">Outros projetos</h2>
+                    </div>
+                    <!-- Section title end -->
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 mb-5">
+                    <h2>Pizza App b7web</h2>
+                    <p>Criei uma api com Laravel graças aos ensinamentos do curso da b7web, fiz meus primeiros endpoints,migrations e a configuração do JWT para o Laravel, a api retorna uma lista de atrativos com nome, latitude e longitude, preço, etc. Também podemos adicionar novos lugares, porém, para adicionar é preciso estar logado.</p>
+                    <ul class="d-flex list-unstyled">
+                        <li class="mr-3">
+                            <img src="./img/javascript.jpg" width="30px" height="30px">
+                        </li>
+                        <li class="mr-3">
+                            <img src="./img/html5-e-css3.jpg" width="30px" height="30px">
+                        </li>
+                    </ul>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                        <li>
+                            <a href="https://github.com/d8web/PizzaApp" target="_blank">Ver código</a>
+                        </li>
+                        <li>
+                            <a href="https://d8web.github.io/PizzaApp/" target="_blank">Ver projeto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <h2>Landing Page</h2>
+                    <p>Vi um layout no Behance e então decidi construi-lo. Uma landing bem bonita para uma agência. Confesso que depois de um tempo estou com um pouco de vergonha desse código, mas por outro lado consegui ver minha evolução na construção e otimização das estruturas que venho criando, Aqui não sabia conceitos de flexbox e grid.</p>
+                    <ul class="d-flex list-unstyled">
+                        <li class="mr-3">
+                            <img src="./img/html5-e-css3.jpg" width="30px" height="30px">
+                        </li>
+                        <li class="mr-3">
+                            <img src="./img/bootstrap.jpg" width="30px" height="30px">
+                        </li>
+                    </ul>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                        <li>
+                            <a href="https://github.com/d8web/projetoAgencia" target="_blank">Ver código</a>
+                        </li>
+                        <li>
+                            <a href="https://d8web.github.io/projetoAgencia/" target="_blank">Ver projeto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <h2>Prova Devmedia</h2>
+                    <p>Vi um tutorial da Devmedia, onde eles passaram uma prova para os canditatos a vaga de programador. Decidi reproduzir o exercício com o conhecimento que eu tinha com php, então fiz um mini blog que lista os últimos posts, adiciona novos posts, busca por posts e com o layout minimamente apresentável e responsivo.</p>
+                    <ul class="d-flex list-unstyled">
+                        <li class="mr-3">
+                            <img src="./img/php.jpg" width="30px" height="30px">
+                        </li>
+                        <li class="mr-3">
+                            <img src="./img/database.png" width="30px" height="30px">
+                        </li>
+                        <li>
+                            <img src="./img/html5-e-css3.jpg" width="30px" height="30px">
+                        </li>
+                    </ul>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                        <li>
+                            <a href="https://github.com/d8web/ProvaDevMedia" target="_blank">Ver código</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=Ft7nfxheTlU" target="_blank">Ver projeto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <h2>Canil</h2>
+                    <p>Sistema básico que mostra uma lista de pets baseado na query string, feito com ajuda do curso da b7web, aqui aprendi a criar um servidor com Node, Express e Typescript, sistema de rotas, estrutura mvc, variáveis de ambiente e pesquisa de pets. Aprendi também a fazer a configuração do Typescript para utilizar com Node.</p>
+                    <ul class="d-flex list-unstyled">
+                        <li class="mr-3">
+                            <img src="./img/nodejs.jpg" width="30px" height="30px">
+                        </li>
+                        <li class="mr-3">
+                            <img src="./img/typescript.jpg" width="30px" height="30px">
+                        </li>
+                    </ul>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                        <li>
+                            <a href="https://github.com/d8web/nodeTsCanil" target="_blank">Ver código</a>
+                        </li>
+                        <li>
+                            <a href="https://protected-harbor-47841.herokuapp.com/" target="_blank">Ver projeto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <h2>Crud Usuários</h2>
+                    <p>Um dos meus primeiros cruds com PHP, no ínício tive um pouco de dificuldades para entender as querys sql e como funcionavam as operações dentro do banco de dados. Porém com o tempo fui aprendendo mais e as coisas ficaram mais claras na minha mente. Coloquei algumas validações básicas para adicionar um usuário.</p>
+                    <ul class="d-flex list-unstyled">
+                        <li class="mr-3">
+                            <img src="./img/php.jpg" width="30px" height="30px">
+                        </li>
+                        <li class="mr-3">
+                            <img src="./img/database.png" width="30px" height="30px">
+                        </li>
+                        <li class="mr-3">
+                            <img src="./img/html5-e-css3.jpg" width="30px" height="30px">
+                        </li>
+                    </ul>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                        <li>
+                            <a href="https://github.com/d8web/crudUsuarios" target="_blank">Ver código</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <h2>Travel App Expo</h2>
+                    <p>Aplicativo que se comunica com a api criada em Laravel, aqui depois de aprender alguns conceitos sobre React resolvi me aventurar no mobile, já que dominava bem o css, flexbox, e comecei a criar as primeiras telas com o expo. Aprendi o sistema de rotas rapidamente e criei esse aplicativo com algumas funcionalidades.</p>
+                    <ul class="d-flex list-unstyled">
+                        <li class="mr-3">
+                            <img src="./img/reactjs.jpg" width="30px" height="30px">
+                        </li>
+                        <li class="mr-3">
+                            <img src="./img/javascript.jpg" width="30px" height="30px">
+                        </li>
+                    </ul>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                        <li>
+                            <a href="https://github.com/d8web/carrancas_v3" target="_blank">Ver código</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </div>
+   </section>
+
+   <section class="features-section" id="courses">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <!-- Section title start -->
+                    <div class="section-title">
+                        <h1 class="title">Cursos</h1>
+                        <h2 class="subtitle">Alguns de cursos que fiz.</h2>
+                    </div>
+                    <!-- Section title end -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Curso Javascript B7web</li>
+                        <li>Curso Html e Css B7web</li>
+                        <li>Curso Laravel B7web</li>
+                        <li>Curso Node B7web</li>
+                        <li>Curso Banco de dados B7web</li>
+                        <li>Curso Php B7web</li>
+                        <li>Curso React B7web</li>
+                        <li>Curso Desenvolvimento web Danki code</li>
+                        <li>Curso Flexbox Node Studio</li>
+                        <li>Curso Construido sites Node Studio</li>
+                        <li>Curso Html e Css Node Studio</li>
+                        <li>Curso Html e Css Curso em video</li>
+                        <li>Curso PHP Curso em video</li>
+                        <li>Curso Lógica de Programação Curso em video</li>
+                        <li>Curso Orientação a objetos Curso em video</li>
+                        <li>Curso Wordpress Curso em video</li>
+                        <li>Curso Mysql Curso em video</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <p>Aprendi muito com esses cursos, porém aqui não adicionei os tutoriais e as documentações lidas e instensas horas de estudo. Conheci os primeiros algoritmos com o curso em vídeo, minhas primeiras páginas conseguir criar graças a Node studio treinamentos.</p>
+                    <p>Já na b7web criei sistemas mais robustos com PHP, Laravel, Mysql, Node com Typescript, React, Expo, MongoDB etc...</p>
+                    <p>Aprendi algumas propriedades e outras várias funcionalidades e ferramentas para essas linguagens com tutoriais do Youtube e documentações na internet.</p>
+                    <p>Alguns projetos não hospedei e não adicionei aqui, mas você pode conferir todos meus projetos no <a href="https://www.github.com/d8web" target="_blank">Github</a>.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="slider-habilities">
-        <div class="container">
-            <div class="title-heading">
-                <h2>Habilidades</h2>
-            </div>
-            <div class="slider-area">
-                <div class="slider-item">
-                    <div class="box-slider">
-                        <div class="box-icon js-color">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <div class="title">
-                            <h2>JavaScript</h2>
-                        </div>
-                        <div class="paragraph-student">
-                            <p>É atualmente a principal linguagem para programação client-side, e também é bastante utilizada do lado do servidor com o node.js.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="box-slider">
-                        <div class="box-icon laravel-color">
-                            <i class="fab fa-laravel"></i>
-                        </div>
-                        <div class="title">
-                            <h2>Laravel</h2>
-                        </div>
-                        <div class="paragraph-student">
-                            <p>Um framework é um facilitador no desenvolvimento de diversas aplicações e, sem dúvida, sua utilização poupa tempo e custos para quem o utiliza.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="box-slider">
-                        <div class="box-icon mysql-color">
-                            <i class="fa fa-database"></i>
-                        </div>
-                        <div class="title">
-                            <h2>Mysql</h2>
-                        </div>
-                        <div class="paragraph-student">
-                            <p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="box-slider">
-                        <div class="box-icon css-color">
-                            <i class="fab fa-css3"></i>
-                        </div>
-                        <div class="title">
-                            <h2>Css3</h2>
-                        </div>
-                        <div class="paragraph-student">
-                            <p>CSS é a linguagem que usamos para definir o estilo de um documento HTML, o CSS descreve como os elementos HTML devem ser exibidos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="box-slider">
-                        <div class="box-icon bootstrap-color">
-                            <i class="fab fa-bootstrap"></i>
-                        </div>
-                        <div class="title">
-                            <h2>Bootstrap</h2>
-                        </div>
-                        <div class="paragraph-student">
-                            <p>O framework front-end e de código-aberto, criado para o desenvolvimento web mais rápido e prático.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="box-slider">
-                        <div class="box-icon php-color">
-                            <i class="fab fa-php"></i>
-                        </div>
-                        <div class="title">
-                            <h2>PHP</h2>
-                        </div>
-                        <div class="paragraph-student">
-                            <p>É uma linguagem interpretada livre, usada para o desenvolvimento de aplicações no lado do servidor, capazes de gerar conteúdo dinâmico na Web.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="box-slider">
-                        <div class="box-icon html-color">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <div class="title">
-                            <h2>Html5</h2>
-                        </div>
-                        <div class="paragraph-student">
-                            <p>É uma linguagem de marcação para a World Wide Web, utilizada para a construção de páginas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="box-slider">
-                        <div class="box-icon react-color">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <div class="title">
-                            <h2>React</h2>
-                        </div>
-                        <div class="paragraph-student">
-                            <p>Uma biblioteca JavaScript para criar interfaces de usuário, React faz com que a criação de UIs interativas seja uma tarefa fácil.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="box-slider">
-                        <div class="box-icon wordpress-color">
-                            <i class="fab fa-wordpress"></i>
-                        </div>
-                        <div class="title">
-                            <h2>Wordpress</h2>
-                        </div>
-                        <div class="paragraph-student">
-                            <p>É um sistema livre para gestão de conteúdo para internet, voltado principalmente para a criação de sites e blogs.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- Footer section start -->
+	<footer class="footer" id="contact">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="footer-logo">
+						<a href="#"><span class="logo-circle"></span> DF DEV</a>
+					</div>
+					<div class="footer-social-links">
+						<a href="https://www.behance.net/danielferreira22" target="_blank"><i class="fab fa-behance"></i></a>
+						<a href="https://www.linkedin.com/in/daniel-ferreira-developer/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://github.com/d8web" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5535998216583&text=Ol%C3%A1%20Daniel!" target="_blank"><i class="fab fa-whatsapp"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright &copy; Criado com 🤍 por DF DEV 2020</p>
+		</div>
+	</footer>
+	<!-- Footer section end -->
 
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="title-heading">
-                <h2>Projetos</h2>
-            </div>
-            <div class="portfolio-menu">
-                <ul>
-                    <li class="active" data-filter="*">Todos</li>
-                    <li data-filter=".web">Frontend</li>
-                    <li data-filter=".seo">Backend</li>
-                    <li data-filter=".graphics">Api</li>
-                </ul>
-            </div>
-            <div class="portfolio-item">
-                <div class="item web">
-                    <img src="assets/images/filter.jpg" alt="">
-                </div>
-                <div class="item web">
-                    <img src="assets/images/filter.jpg" alt="">
-                </div>
-                <div class="item graphics">
-                    <img src="assets/images/filter.jpg" alt="">
-                </div>
-                <div class="item graphics">
-                    <img src="assets/images/filter.jpg" alt="">
-                </div>
-                <div class="item seo">
-                    <img src="assets/images/filter.jpg" alt="">
-                </div>
-                <div class="item seo">
-                    <img src="assets/images/filter.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- Live style demo only start -->
+	<!--<div class="style-switcher">
+		<div class="toggle-style-switcher">
+			<i class="fas fa-chevron-left"></i>
+		</div>
+		<h5>Style Switcher</h5>
+		<ul class="list-unstyled">
+			<li title="crimson" style="background-color: #2980b9;" onclick="setActiveStyle('crimson')"></li>
+			<li title="black" style="background-color: #222222;" onclick="setActiveStyle('black')"></li>
+		</ul>
+	</div>-->
+	<!-- Live style demo only end -->
 
-    <section class="contact">
-        <div class="container">
-            <div class="title-heading">
-                <h2>Contato</h2>
-            </div>
-            <div class="box-contact">
-                <div class="box-form">
-                    <form class="form-contact" action="" method="post" id="form">
-                        <label for="name">
-                            <input type="text" name="name" autocomplete="off" placeholder="Digite seu nome" />
-                        </label>
-                        <label for="email">
-                            <input type="email" name="email" autocomplete="off" placeholder="Digite seu email" />
-                        </label>
-                        <label for="message">
-                            <textarea name="message" placeholder="Digite sua mensagem..."></textarea>
-                        </label>
-                        <input type="submit" value="Enviar" />
-                    </form>
-                </div>
-                <div class="form-ilustration">
-                    <img src="assets/images/bg-contact.svg" alt="Figura Ilustrativa contato" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="box-footer">
-                <div class="logo">
-                    <div><span class="dark-text">DF</span>Developer</div>
-                </div>
-                <div class="copytext-footer">
-                    <p>Criado por Daniel Ferreira | 2020</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/form.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script>
-        // Filter portfolio
-        $('.portfolio-item').isotope({
-            itemSelector: '.item',
-            layoutMode: 'fitRows'
-        });
-        $('.portfolio-menu ul li').on('click', function(){
-            $('.portfolio-menu ul li').removeClass('active');
-            $(this).addClass('active');
-
-            var seletor = $(this).attr('data-filter');
-            $('.portfolio-item').isotope({
-                filter: seletor
-            });
-            return false;
-        });
-    </script>
+<!-- Jquery -->
+<script src="js/jquery.min.js"></script>
+<!-- Popper -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- main -->
+<script src="js/main.js"></script>
+<!-- Live style demo only -->
+<script src="js/styleSwitcher.js"></script>
 </body>
 </html>
